@@ -8,9 +8,9 @@
 // 	{name: 'Maggie', surname: 'Simpson', age: 1,info:'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.', photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'},
 // ];
 // Створити компонент для того, щоб  відобразити кожного персонажа
-
+//let{title,price} = props;
+import './Simpsons.css'
 export default function Simpsons({name,surname,age,info,photo}) {
-    //let{title,price} = props;
  let classNameTitle = 'simpsons'
   return (
     <div className={classNameTitle}>
