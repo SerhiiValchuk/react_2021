@@ -16,7 +16,7 @@ export default function Simpsons({name,surname,age,info,photo}) {
     <div className={classNameTitle}>
         <h2>{name}</h2>
         <h2>{surname}</h2>
-        <h3> Вік  {age} років</h3>
+        <h3> Вік  {age} р.</h3>
         <h4>{info}</h4>
         <img src={photo} alt="personage"/>
         <hr/>
