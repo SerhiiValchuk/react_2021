@@ -1,6 +1,6 @@
 import User from '../user/User';
 import {useEffect, useState} from "react";
-import {getUsers} from '../../services/user.service';
+import {getUsers,getUser} from '../../services/user.service';
 
 export default function Users() {
   let [users, setUsers] = useState([]);
@@ -11,7 +11,7 @@ export default function Users() {
   return (
     <div>
       {
-        users.map((userItem, index) => <User key={userItem.id} item={userItem}/>)
+        users.map((userItem) => <User key={userItem.id} item={userItem}/>)
       }
     </div>
   );
