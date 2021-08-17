@@ -14,7 +14,7 @@ export default function User({item:userItem}) {
             <h2>
                 {userItem.id} {userItem.name}
             </h2>
-            <h3><Posts items ={posts}/></h3>
+            <h3><Posts items={posts}/></h3>
         </div>
     );
 }

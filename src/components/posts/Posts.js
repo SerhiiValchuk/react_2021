@@ -1,11 +1,14 @@
-import Comments from "../comments/Comments";
+
+import Post from "../Post/Post";
 
 export default function Posts({items}) {
+
   return (
     <div>
       {
-        items.map(value =><div>{value.title}</div>)
+        items.map(value =><Post key={value.id} item={value}/>)
       }
     </div>
+
   );
 }

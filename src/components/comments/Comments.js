@@ -1,8 +1,9 @@
-export default function Comments() {
+export default function Comments({itemi}) {
   return (
-    <div>
-    Comments
-
-    </div>
+      <div>
+          {
+              itemi.map(value => <div>{value.id} {value.body}</div>)
+          }
+      </div>
   );
 }
