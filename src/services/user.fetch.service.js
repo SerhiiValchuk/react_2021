@@ -3,4 +3,10 @@ const getUsers = () => {
         .then(value => value.json());
 
 };
-export {getUsers};
+const getPosts = () => {
+    return fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(value => value.json());
+
+};
+
+export {getUsers,getPosts};
