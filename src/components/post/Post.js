@@ -1,7 +1,7 @@
-export default function Post({item}) {
+export default function Post(item) {
   return (
     <div>
-        item.map(value => <div>{value.id} {value.title}</div>)
+        item.map(value =><Post key={value.id} item={value}/>)
     </div>
   );
 }

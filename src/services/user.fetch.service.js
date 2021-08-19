@@ -1,10 +1,12 @@
+const url = 'https://jsonplaceholder.typicode.com/users';
+
 const getUsers = () => {
-    return fetch('https://jsonplaceholder.typicode.com/users')
+    return fetch(url)
         .then(value => value.json());
 
 };
-const getPosts = () => {
-    return fetch('https://jsonplaceholder.typicode.com/posts')
+const getPosts = (id) => {
+    return fetch(url +'/' + id + '/posts')
         .then(value => value.json());
 
 };
