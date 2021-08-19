@@ -1,7 +1,10 @@
-export default function Comment(item) {
+export default function Comment({item:commentItem}) {
   return (
     <div>
-      {item.id} {item.name}
+      {commentItem.id} {commentItem.name}
+      <button onClick={() => {
+      }}>details
+      </button>
     </div>
   );
 }
